@@ -1,0 +1,5 @@
+STATES = {1,2}
+ALPHABET = {a, b}
+INITIAL = {1}
+ACCEPTING = {2}
+TRANSITIONS = {(1) PLUS a -> (1),(1) PLUS b -> (2),(2) PLUS a -> (1),(2) PLUS b -> (2)}
