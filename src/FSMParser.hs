@@ -50,7 +50,7 @@ module FSMParser where
     alphabetSymbolParser :: Parser FSM.AlphabetSymbol
     alphabetSymbolParser = do
         s <- many1 letter
-        return $ FSM.AlphabetSymbol (read s :: String)
+        return $ FSM.AlphabetSymbol s
 
     alphabetParser :: Parser FSM.Alphabet
     alphabetParser = do
